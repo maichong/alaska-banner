@@ -1,0 +1,29 @@
+{
+  "name": "alaska-banner",
+  "version": "0.8.0",
+  "description": "Alaska banner service",
+  "main": "lib/alaska-banner.js",
+  "scripts": {
+    "build": "babel ./src --out-dir ./lib",
+    "watch": "babel ./src --out-dir ./lib -w",
+    "prebuild": "rimraf lib",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maichong/alaska-banner.git"
+  },
+  "author": {
+    "email": "liang@maichong.it",
+    "name": "liang",
+    "url": "https://github.com/liangxingchen"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maichong/alaska-banner/issues"
+  },
+  "homepage": "https://github.com/maichong/alaska-banner#readme",
+  "peerDependencies": {
+    "alaska": "*"
+  }
+}
