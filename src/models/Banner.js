@@ -6,7 +6,7 @@
 
 export default class Banner extends service.Model {
   static defaultSort = '-sort';
-  static defaultColumns = 'pic,title,sort,clicks,activated,startAt,endAt';
+  static defaultColumns = 'pic title position sort clicks activated startAt endAt';
   static api = {
     list: 1
   };
