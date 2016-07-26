@@ -4,7 +4,7 @@
  * @author Liang <liang@maichong.it>
  */
 
-const Banner = service.model('Banner');
+import Banner from '../models/Banner';
 
 export default function (router) {
   router.get('/redirect/:id', async function (ctx, next) {

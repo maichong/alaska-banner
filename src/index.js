@@ -6,11 +6,13 @@
 
 import alaska from 'alaska';
 
-export default class BannerService extends alaska.Service {
+class BannerService extends alaska.Service {
   constructor(options, alaska) {
     options = options || {};
-    options.id = 'alaska-banner';
-    options.dir = __dirname;
+    options.dir = options.dir || __dirname;
+    options.id = options.id || 'alaska-banner';
     super(options, alaska);
   }
 }
+
+export default new BannerService();

@@ -4,7 +4,12 @@
  * @author Liang <liang@maichong.it>
  */
 
-export default class Banner extends service.Model {
+import alaska from 'alaska';
+
+export default class Banner extends alaska.Model {
+
+  static label = 'Banner';
+  static icon = 'picture-o';
   static defaultSort = '-sort';
   static defaultColumns = 'pic title position sort clicks activated startAt endAt';
   static api = {
