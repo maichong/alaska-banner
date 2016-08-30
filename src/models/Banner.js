@@ -16,13 +16,14 @@ export default class Banner extends alaska.Model {
     list: 1
   };
 
-  static defaultFilters() {
+  static defaultFilters = ctx => {
+    if (ctx.service.id === 'alaska-admin') return null;
     return {
       activated: true,
       startAt: { $lte: new Date },
       endAt: { $gte: new Date }
     };
-  }
+  };
 
   static fields = {
     title: {
